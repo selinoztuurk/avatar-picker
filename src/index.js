@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+const avatarList = [
+  { src: "/avatars/avatar1.png", label: "Avatar 1", id: 1 },
+  { src: "/avatars/avatar2.png", label: "Avatar 2", id: 2 },
+  { src: "/avatars/avatar3.png", label: "Avatar 3", id: 3 },
+  { src: "/avatars/avatar4.png", label: "Avatar 4", id: 4 },
+  { src: "/avatars/avatar5.png", label: "Avatar 5", id: 5 },
+  { src: "/avatars/avatar6.png", label: "Avatar 6", id: 6 },
+];
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <App avatarList={avatarList} />,
+  document.querySelector("#root")
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

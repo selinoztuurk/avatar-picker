@@ -1,0 +1,48 @@
+/*#triangle {
+  width: 0;
+  height: 0;
+  transform: translate(-50%);
+  position: absolute;
+  left: 50%;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid black;
+}*/
+
+.popover-fadein {
+  animation: fadein 0.2s linear 1;
+}
+
+@keyframes fadein {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.popover-fadeout {
+  animation: fadeout 0.1s linear 1;
+}
+
+@keyframes fadeout {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.text {
+  font-family: "Source Sans Pro";
+  color: rgb(249, 249, 249);
+  font-size: 16px;
+  margin-top: 14px;
+  margin-left: 14px;
+  margin-right: 14px;
+}

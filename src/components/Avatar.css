@@ -1,0 +1,77 @@
+img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 7px;
+  border: solid 3px transparent;
+}
+
+.pickedAvatar {
+  position: absolute;
+  border: 3px solid rgb(122, 161, 178);
+  border-radius: 50%;
+  top: 7px;
+  bottom: 0px;
+  left: 2px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+}
+
+.overlay:hover + img {
+  border-color: rgb(155, 160, 163);
+}
+
+.overlay:hover {
+  opacity: 20%;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 50%;
+  height: 54px;
+  width: 54px;
+  top: 10px;
+  bottom: 10px;
+  left: 5px;
+  right: 10px;
+  transition: 0.1s ease;
+  background-color: rgb(122, 161, 178);
+  opacity: 0;
+}
+
+.ui.grid > .column:not(.row) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.activeCurrentAvatar {
+  border: solid 1px rgb(155, 160, 163);
+}
+
+.currentAvatar:hover {
+  border: solid 1px rgb(155, 160, 163);
+}
+
+.loader {
+  position: absolute;
+  border: 3px solid rgb(122, 161, 178);
+  border-top: 3px solid rgb(44, 48, 51);
+  border-radius: 50%;
+  top: 7px;
+  bottom: 0px;
+  left: 2px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
