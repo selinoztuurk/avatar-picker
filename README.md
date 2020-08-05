@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Demo of this project can be reached at [this link](http://avatar-picker.herokuapp.com/).
+
 ## Available Scripts
 
 In the project directory, you can run:
